@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О финансах просто - МАДОУ №539</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <div class="logo-icon">💰</div>
+                    <div>
+                        <h1>О финансах просто</h1>
+                        <p>МАДОУ детский сад №539</p>
+                    </div>
+                </div>
+                <nav class="nav-links">
+                    <a href="#games">Игры</a>
+                    <a href="#parents">Родителям</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Каждая тема - это увлекательное приключение!</h1>
+                <p>Игровое обучение финансовой грамотности и кибербезопасности для детей дошкольного возраста</p>
+            </div>
+            <div class="hero-decoration">
+                <div class="decoration-circle circle-1"></div>
+                <div class="decoration-circle circle-2"></div>
+                <div class="decoration-circle circle-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games">
+        <div class="container">
+            <h2>Выбери тему для изучения</h2>
+            <div class="games-grid">
+                <!-- Карточка 1 -->
+                <div class="game-card" data-topic="cyber-security">
+                    <div class="card-header cyber-security">
+                        <h3>Кибер-безопасность</h3>
+                        <p>Учимся безопасно пользоваться интернетом</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="lessons">5 уроков</span>
+                        <button class="play-btn" onclick="openGameModal('cyber-security')">Начать игру</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="game-card" data-topic="saving">
+                    <div class="card-header saving">
+                        <h3>Как накопить</h3>
+                        <p>Учимся копить и достигать целей</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="lessons">5 уроков</span>
+                        <button class="play-btn" onclick="openGameModal('saving')">Начать игру</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="game-card" data-topic="fraud-protection">
+                    <div class="card-header fraud-protection">
+                        <h3>Защита от мошенников</h3>
+                        <p>Как распознать обман и защитить себя</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="lessons">5 уроков</span>
+                        <button class="play-btn" onclick="openGameModal('fraud-protection')">Начать игру</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="game-card" data-topic="budget-planning">
+                    <div class="card-header budget-planning">
+                        <h3>Планирование бюджета</h3>
+                        <p>Как правильно распределять деньги</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="lessons">5 уроков</span>
+                        <button class="play-btn" onclick="openGameModal('budget-planning')">Начать игру</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="game-card" data-topic="game-safety">
+                    <div class="card-header game-safety">
+                        <h3>Безопасность в играх</h3>
+                        <p>Правила безопасной игры онлайн</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="lessons">5 уроков</span>
+                        <button class="play-btn" onclick="openGameModal('game-safety')">Начать игру</button>
+                    </div>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div class="game-card" data-topic="finance-basics">
+                    <div class="card-header finance-basics">
+                        <h3>Основы финансов</h3>
+                        <p>Что такое деньги и как они работают</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="lessons">5 уроков</span>
+                        <button class="play-btn" onclick="openGameModal('finance-basics')">Начать игру</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parents Section -->
+    <section id="parents" class="parents">
+        <div class="container">
+            <div class="parents-header">
+                <h2>Родителям</h2>
+                <p>Советы по воспитанию финансовой грамотности у детей дошкольного возраста</p>
+            </div>
+
+            <div class="advice-grid">
+                <div class="advice-card">
+                    <div class="advice-number">1</div>
+                    <h3>Личный пример</h3>
+                    <p>Дети копируют ваше поведение. Показывайте на практике, как вы планируете покупки и относитесь к деньгам бережно.</p>
+                </div>
+
+                <div class="advice-card">
+                    <div class="advice-number">2</div>
+                    <h3>Карманные деньги</h3>
+                    <p>Выдавайте небольшие, но регулярные суммы. Это первый шаг к финансовой ответственности и планированию.</p>
+                </div>
+
+                <div class="advice-card">
+                    <div class="advice-number">3</div>
+                    <h3>Игра - главный инструмент</h3>
+                    <p>Используйте настольные игры, играйте в "магазин" дома. Через игру дети лучше усваивают финансовые понятия.</p>
+                </div>
+
+                <div class="advice-card">
+                    <div class="advice-number">4</div>
+                    <h3>Право на ошибку</h3>
+                    <p>Позвольте ребенку потратить свои деньги нерационально. Это станет лучшим уроком финансовой грамотности.</p>
+                </div>
+
+                <div class="advice-card">
+                    <div class="advice-number">5</div>
+                    <h3>Не деньги за оценки</h3>
+                    <p>Связь денег и учебы формирует неправильную мотивацию. Лучше хвалить за старание и интерес к знаниям.</p>
+                </div>
+
+                <div class="advice-card">
+                    <div class="advice-number">6</div>
+                    <h3>Обсуждайте финансы</h3>
+                    <p>Говорите с ребенком о семейном бюджете доступным языком. Объясняйте, почему некоторые покупки нужно отложить.</p>
+                </div>
+            </div>
+
+            <div class="resources">
+                <h3>Полезные ресурсы</h3>
+                <div class="resources-grid">
+                    <div class="resource-column">
+                        <h4>Официальные источники:</h4>
+                        <ul>
+                            <li>• Сайт ЦБ РФ "Финкульт"</li>
+                            <li>• Проект Минфина "Вашифинансы"</li>
+                            <li>• Портал "Госуслуги" - финансовые сервисы</li>
+                        </ul>
+                    </div>
+                    <div class="resource-column">
+                        <h4>Рекомендуемые игры:</h4>
+                        <ul>
+                            <li>• "Монополия Junior"</li>
+                            <li>• "Денежный поток для детей"</li>
+                            <li>• "Финансовый футбол"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>О финансах просто</h3>
+                    <p>МАДОУ детский сад комбинированного вида №539</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>Образовательный проект по финансовой грамотности</p>
+                    <p>© 2024 Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeGameModal()">&times;</span>
+            <div id="modalContent">
+                <!-- Контент модального окна будет добавляться через JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
